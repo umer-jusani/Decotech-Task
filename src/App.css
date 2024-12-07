@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Titling Gothic FB";
+  src: url("path-to-font/TitlingGothicFB.woff2") format("woff2"),
+    url("path-to-font/TitlingGothicFB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* root Variables */
+:root {
+  /* colors */
+  --clr-neutral-color: #e9e2cf;
+  /* --border-radius: #e8dfcf; */
+
+  /* FontColor */
+  --f-clr-white: #ffffff;
+  --f-clr-black: #000;
+  --f-clr-LightBlack: #1c1c1c;
+
+  /* bg-colors */
+  --bg-clr-black: #000;
+  --bg-clr-greyish: rgb(217 217 217);
+  --bg-clr-red: #eb0000;
+  --bg-clr-yellow: #ffae34;
+
+  /* fontsizes */
+  --fs-100: 0.625rem; /* 10px */
+  --fs-200: 0.9375rem; /* 15px */
+  --fs-300: 1rem; /* 16px */
+  --fs-400: 1.125rem; /* 18px */
+  --fs-500: 1.3125rem; /* 21px */
+  --fs-600: 2.375rem; /* 38px */
+  --fs-700: 3.5rem; /* 56px */
+  --fs-800: 9.375rem; /* 150px */
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Titling Gothic FB", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility classess */
+.container {
+  --max-width: 1850px;
+  --padding: 1rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-left: auto;
+}
+
+/* header */
+
+.primary_header {
+  position: relative;
+}
+.primary_header::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 19rem;
+  width: 298px;
+  height: 13%;
+  background: black; /* Mask color (irrelevant because of the mask image) */
+
+  /* Applying the mask */
+  -webkit-mask-image: url("./assets/primaryHeaderMusk.png"); /* Mask image */
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("./assets/primaryHeaderMusk.png");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  /* Animation */
+  animation: reveal 2s ease-out forwards;
+  z-index: 1;
+}
+
+.primary_header .left_section {
+  display: flex;
+  gap: 0.5rem;
+
+  @media (min-width: 70em) {
+    gap: 2.5rem;
+  }
+}
+
+.primary_header .primary-header-button {
+  /* max-width: 200px; */
+  padding: 25px 15px;
+  color: var(--f-clr-black);
+  font-size: var(--fs-500);
+  line-height: 1.3125rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+  height: 100%;
+  word-spacing: -2px;
+  border-style: none;
+  background-color: var(--bg-clr-red);
+  transition-duration: 0.5s;
+}
+
+.primary_header .primary-header-button[data-inverted="true"] {
+  background-color: var(--bg-clr-yellow);
+}
+
+@media (max-width: 50em) {
+  .primary_header .primary-header-button {
+    font-size: var(--fs-300);
+  }
+  .primary_header .primary-header-button:not([data-inverted="true"]) {
+    display: none;
+    /* Styles for buttons that do not have data-inverted="true" */
+  }
+}
+
+.primary_header .primary-header-button:hover,
+.primary_header .primary-header-button:active {
+  background-color: var(--bg-clr-greyish);
+  cursor: pointer;
+}
+
+.arrow {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 5px;
+}
+
+.arrow img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+.humburger {
+  width: 2rem;
+  height: 2rem;
+  align-self: center;
+
+  @media (min-width: 70em) {
+    display: none;
+  }
+}
+
+.humburger img {
+}
