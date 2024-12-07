@@ -12,16 +12,17 @@
   --clr-neutral-color: #e9e2cf;
   /* --border-radius: #e8dfcf; */
 
-  /* FontColor */
+  /* fontcolors */
   --f-clr-white: #ffffff;
-  --f-clr-black: #000;
-  --f-clr-LightBlack: #1c1c1c;
+  --f-clr-primary: #e9e2cf;
+  --clr-black: #000;
 
   /* bg-colors */
   --bg-clr-black: #000;
   --bg-clr-greyish: rgb(217 217 217);
   --bg-clr-red: #eb0000;
   --bg-clr-yellow: #ffae34;
+  --bg-lightBlack: #1c1c1c;
 
   /* fontsizes */
   --fs-100: 0.625rem; /* 10px */
@@ -32,6 +33,7 @@
   --fs-600: 2.375rem; /* 38px */
   --fs-700: 3.5rem; /* 56px */
   --fs-800: 9.375rem; /* 150px */
+  --fs-card: 2.8125rem; /* 200px */
 }
 
 /* Box sizing rules */
@@ -106,10 +108,54 @@ select {
 
 /* utility classess */
 .container {
-  --max-width: 1850px;
   --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
-  margin-left: auto;
+  width: min(var(--max-width, 1850px), 100% - var(--padding) * 2);
+  margin: var(--container-Align);
+}
+
+.padding-block-500 {
+  padding-block: 6rem;
+
+  @media (max-width: 50em) {
+    padding-block: 4rem;
+  }
+}
+
+/* subSection_title */
+.subSection_title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--f-clr-primary);
+  position: relative;
+  font-size: var(--fs-700);
+  letter-spacing: -3px;
+  display: inline-block;
+  border-top: 1px solid #e9e2cf;
+  border-bottom: 2px solid #e9e2cf;
+
+  @media (max-width: 50em) {
+    font-size: var(--fs-600);
+  }
+}
+
+/* section Primary Button */
+.primary-button {
+  color: var(--f-clr-black);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: var(--fs-400);
+  background-color: var(--bg-clr-red);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  border-style: none;
+
+  @media (max-width: 50em) {
+    padding: 0.75rem 0.75rem;
+    font-size: var(--fs-300);
+  }
 }
 
 /* header */
@@ -153,7 +199,7 @@ select {
 .primary_header .primary-header-button {
   /* max-width: 200px; */
   padding: 25px 15px;
-  color: var(--f-clr-black);
+  color: var(--clr-black);
   font-size: var(--fs-500);
   line-height: 1.3125rem;
   letter-spacing: -2px;
@@ -207,5 +253,28 @@ select {
   }
 }
 
-.humburger img {
+/* social Icons */
+
+.socialIcons_List {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 20px;
+
+  @media (max-width: 50em) {
+    gap: 1.3rem;
+  }
 }
+.socialIcons_List li {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons_List li:hover {
+  transform: scale(1.2); /* Slightly enlarge the hovered icon */
+}
+
+.socialIcons_List li:hover ~ li {
+  opacity: 0.5; /* Reduce opacity of non-hovered icons */
+}
+
+/* Gameplay overview */

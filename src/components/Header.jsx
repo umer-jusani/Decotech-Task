@@ -7,12 +7,12 @@ import Humburger from "../assets/burger-menu.svg"
 const Header = () => {
     return (
         <Section className='primary_header'>
-            <Container className='container'>
+            <Container className='container' style={{"--container-Align": "0 0 0 auto"}}>
 
                 <div className='left_section'>
                     <a href="" className='humburger'>
-                    <img src={Humburger} alt="humburger" />
-                </a>
+                        <img src={Humburger} alt="humburger" />
+                    </a>
                     <BrandLogo href="" >
                         <img src={Logo} alt="" />
                     </BrandLogo>
