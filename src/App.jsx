@@ -13,11 +13,12 @@ function App() {
   return (
     <>
       <Header />
+      <HeroSection />
+      <SocialIcons />
       <Parellell />
       {/* <Sample /> */}
-      {/* <HeroSection /> */}
 
-      <SocialIcons />
+
 
       {/* <GameOverView /> */}
       <GamePlay />
