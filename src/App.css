@@ -66,7 +66,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Titling Gothic FB", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -113,12 +113,26 @@ select {
   margin: var(--container-Align);
 }
 
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
 .padding-block-500 {
   padding-block: 6rem;
 
   @media (max-width: 50em) {
     padding-block: 4rem;
   }
+}
+
+p {
+  font-weight: 500;
+  font-size: var(--fs-400);
+  word-spacing: 2px;
+  letter-spacing: 0.9px;
+  line-height: 1.2;
+  color: var(--bg-clr-greyish);
+  max-width: 75ch;
 }
 
 /* subSection_title */
@@ -128,7 +142,7 @@ select {
   color: var(--f-clr-primary);
   position: relative;
   font-size: var(--fs-700);
-  letter-spacing: -3px;
+  letter-spacing: 1px;
   display: inline-block;
   border-top: 1px solid #e9e2cf;
   border-bottom: 2px solid #e9e2cf;
@@ -149,7 +163,7 @@ select {
   background-size: cover;
   background-position: center;
   border-radius: 5px;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   border-style: none;
 
   @media (max-width: 50em) {
@@ -277,4 +291,4 @@ select {
   opacity: 0.5; /* Reduce opacity of non-hovered icons */
 }
 
-/* Gameplay overview */
+/* parellell */
