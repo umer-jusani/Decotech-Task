@@ -137,16 +137,6 @@ select {
   }
 }
 
-p {
-  font-weight: 500;
-  font-size: var(--fs-400);
-  word-spacing: 2px;
-  letter-spacing: 0.9px;
-  line-height: 1.2;
-  color: var(--bg-clr-greyish);
-  max-width: 75ch;
-}
-
 /* subSection_title */
 .subSection_title {
   text-transform: uppercase;
@@ -182,6 +172,23 @@ p {
     padding: 0.75rem 0.75rem;
     font-size: var(--fs-300);
   }
+}
+
+p {
+  font-size: var(--fs-400);
+  letter-spacing: 1px;
+  color: var(--f-clr-primary);
+}
+
+/* hero section */
+.hero-section p {
+  font-weight: 500;
+  font-size: var(--fs-400);
+  word-spacing: 2px;
+  letter-spacing: 0.9px;
+  line-height: 1.2;
+  color: var(--bg-clr-greyish);
+  max-width: 75ch;
 }
 
 /* header */

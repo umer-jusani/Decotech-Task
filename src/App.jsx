@@ -1,4 +1,5 @@
 import './App.css'
+import Character from './components/Character'
 import Footer from './components/Footer/Footer'
 import GameOverView from './components/GameOverView'
 import GamePlay from './components/GamePlay'
@@ -17,16 +18,18 @@ function App() {
       <HeroSection />
       <SocialIcons />
       <Parellell />
-      {/* <Sample /> */}
-
-
-
-      {/* <GameOverView /> */}
       <GamePlay />
-      {/* <SeasonPass /> */}
+      <SeasonPass />
+      <Character />
       <LatestNews />
       <SocialIcons />
       <Footer />
+
+
+
+      {/* <Sample /> */}
+      {/* <GameOverView /> */}
+
     </>
   )
 }

@@ -35,8 +35,6 @@ const LatestNews = () => {
         ]
     };
 
-
-
     return (
         <Section className='padding-block-500'>
             <Container className='container' style={{ "--container-Align": "0 auto 0 auto", "--max-width": "1200px" }}>

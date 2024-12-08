@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const HeroSection = () => {
   return (
-    <Section>
+    <Section className='hero-section'>
       <div className='container' data-small="true" style={{ "--container-Align": "0 auto 0 auto" }}>
         <Wrapper className='flow' style={{ "--flow-spacer": "3em" }}>
           <Head>
