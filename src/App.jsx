@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import GameOverView from './components/GameOverView'
 import GamePlay from './components/GamePlay'
 import Header from './components/Header'
@@ -22,9 +23,10 @@ function App() {
 
       {/* <GameOverView /> */}
       <GamePlay />
-      <SeasonPass />
+      {/* <SeasonPass /> */}
       <LatestNews />
       <SocialIcons />
+      <Footer />
     </>
   )
 }

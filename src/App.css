@@ -24,12 +24,17 @@
   --bg-clr-yellow: #ffae34;
   --bg-lightBlack: #1c1c1c;
 
+  /* footer background colors */
+  --bg-footer-right: var(--bg-lightBlack);
+  --bg-footer-left: #1d1e21;
+
   /* fontsizes */
   --fs-100: 0.625rem; /* 10px */
   --fs-200: 0.9375rem; /* 15px */
   --fs-300: 1rem; /* 16px */
   --fs-400: 1.125rem; /* 18px */
   --fs-500: 1.3125rem; /* 21px */
+  --fs-550: 1.5rem; /* 21px */
   --fs-600: 2.375rem; /* 38px */
   --fs-700: 3.5rem; /* 56px */
   --fs-750: 4.5rem; /* 150px */
@@ -116,10 +121,9 @@ select {
 
 :where(.flow > :not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
-
 }
 
-:where(.flow > :not(:first-child))[data-small="true"]{
+:where(.flow > :not(:first-child))[data-small="true"] {
   @media (max-width: 40em) {
     margin-top: var(1.5em);
   }
@@ -152,11 +156,11 @@ p {
   font-size: var(--fs-700);
   letter-spacing: 1px;
   display: inline-block;
-  border-top: 1px solid #e9e2cf;
-  border-bottom: 2px solid #e9e2cf;
+  border-top: 3px solid #e9e2cf;
+  border-bottom: 3px solid #e9e2cf;
 
   @media (max-width: 50em) {
-    font-size: var(--fs-600);
+    font-size: var(--fs-550);
   }
 }
 
@@ -299,4 +303,38 @@ p {
   opacity: 0.5; /* Reduce opacity of non-hovered icons */
 }
 
-/* parellell */
+/* footer */
+.footer > :first-child {
+  background-color: var(--bg-footer-left);
+  padding-block: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > :first-child > div {
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-transform: uppercase;
+ 
+
+  @media (max-width: 70em) {
+    text-align: center;
+  }  
+}
+
+.footer > :nth-child(2) {
+  background-color: var(--bg-footer-right);
+}
+
+.footer ul[role="services&support"] {
+  font-size: var(--fs-550);
+  font-weight: bold;
+}
+
+.footer ul[role="policies"] {
+}

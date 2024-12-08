@@ -54,13 +54,11 @@ const VideoContainer = styled.div`
     width: 16em;
   }
 
-
   & > img {
     width: 100%;
     height: auto;
   }
 `;
-
 
 
 const Wrapper = styled.div`
