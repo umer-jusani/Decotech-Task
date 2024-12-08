@@ -119,6 +119,8 @@ const Content = styled.div`
     margin-inline: auto;
     font-family:  sans-serif;
    }
+
+   
 `;
 
 const Head = styled.h2`

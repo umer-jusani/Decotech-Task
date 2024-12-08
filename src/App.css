@@ -116,6 +116,13 @@ select {
 
 :where(.flow > :not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
+
+}
+
+:where(.flow > :not(:first-child))[data-small="true"]{
+  @media (max-width: 40em) {
+    margin-top: var(1.5em);
+  }
 }
 
 .padding-block-500 {

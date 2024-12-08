@@ -38,15 +38,14 @@ const Parellell = () => {
                     <Information>We fight to liberate our nation from the oppression of a ruthless tyrant.</Information>
                 </Content>
             </Section>
-
-            <Section className='parellell' style={{ "--image": `url(${BgThree})` }}>
-                <Content>
+            <Section className='parellell' style={{ "--image": `url(${BgThree})`, }}>
+                <Content data-big-content="true">
                     <Title data-musk="appear">MEET DANI ROJAS</Title>
                     <Information>Growing up in Yara, Dani has experienced the brutality of Antón's rule firsthand. After barely escaping the regime forces with her life, she joins forces with Libertad, a rag tag group of guerrilla fighters, to liberate her home from Antón's grip and corrupt regime..</Information>
                 </Content>
             </Section>
             <Section className='parellell' style={{ "--image": `url(${LightBgThree})` }}>
-                <Content>
+                <Content data-big-content="true">
                     <Title data-musk="appear">MEET DANI ROJAS</Title>
                     <Information>Growing up in Yara, Dani has experienced the brutality of Antón's rule firsthand. After barely escaping the regime forces with his life, he joins forces with Libertad, a rag tag group of guerrilla fighters, to liberate his home from Antón's grip and corrupt regime.</Information>
                 </Content>
@@ -74,6 +73,12 @@ const Content = styled.div`
     color: white;
     padding: 20px;
     inset: 50% 0 15% 0;
+
+    @media (max-width: 50em) {
+        &[data-big-content="true"] {
+        inset: 34% 0 15% 0;  
+    }  
+    }
      
 
     @media (min-width: 50em) {

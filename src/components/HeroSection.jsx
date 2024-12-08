@@ -8,7 +8,7 @@ import styled from 'styled-components';
 const HeroSection = () => {
   return (
     <Section>
-      <div className='container' style={{ "--container-Align": "0 auto 0 auto" }}>
+      <div className='container' data-small="true" style={{ "--container-Align": "0 auto 0 auto" }}>
         <Wrapper className='flow' style={{ "--flow-spacer": "3em" }}>
           <Head>
             <h1>Welcome</h1>
@@ -38,6 +38,10 @@ const Section = styled.section`
   @media (max-width: 70em) {
     background-image: url(${SecondaryBackground});
   }
+
+  @media (max-width: 40em) {
+    height: 73vh;
+  }
 `;
 
 
@@ -45,6 +49,11 @@ const Section = styled.section`
 const VideoContainer = styled.div`
   width: 22em;
   margin-inline: auto;
+
+  @media (max-width: 40em) {
+    width: 16em;
+  }
+
 
   & > img {
     width: 100%;
@@ -56,12 +65,17 @@ const VideoContainer = styled.div`
 
 const Wrapper = styled.div`
   width: fit-content;
-  padding-block: 2rem;
+  padding-block: 4rem;
    
   @media (min-width: 50em) {
     margin-left: auto;
     margin-right: 6rem;
     padding-block: 6rem;
+  }
+
+  @media (max-width: 50em) {
+    max-width: 394px;
+    margin-inline: auto;
   }
 
 & p {
@@ -96,10 +110,12 @@ const Head = styled.div`
   
   & > :nth-child(2) {
   font-size: var( --fs-700);
+  line-height: 0.6;
 }
 & > h1:first-child {
-    font-size: var(--fs-600);
+    font-size: var(--fs-700);
     letter-spacing: -1px;
+    line-height: 0.6;
   }
   }
 `;
