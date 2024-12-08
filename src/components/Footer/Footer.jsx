@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import FooterLogo from "../assets/ubiSoftLogo.svg"
+import FooterLogo from "../../assets/ubiSoftLogo.svg"
+import Main from './Main';
 
 const Footer = () => {
     return (
@@ -29,13 +30,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-
-
-
-
-
-
-                <div>asdasd</div>
+                <div>
+                    <Main />
+                </div>
             </Wrapper>
         </section>
     )
@@ -50,15 +47,16 @@ const Wrapper = styled.div`
 
   @media (max-width: 70em) {
       grid-template-columns: 1fr;
+      & > div:nth-child(1) {
+          order: 2;
+      }
+      & > div:nth-child(2) {
+          order: 1;
+      }
   }
-
-
 `;
 
 const Logo = styled.div`
-    
-
-
     @media (max-width: 50em) {
         width: 12rem;
   } 

@@ -1,5 +1,5 @@
 import './App.css'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 import GameOverView from './components/GameOverView'
 import GamePlay from './components/GamePlay'
 import Header from './components/Header'

@@ -320,11 +320,10 @@ p {
   flex-direction: column;
   gap: 2rem;
   text-transform: uppercase;
- 
 
   @media (max-width: 70em) {
     text-align: center;
-  }  
+  }
 }
 
 .footer > :nth-child(2) {
@@ -334,7 +333,4 @@ p {
 .footer ul[role="services&support"] {
   font-size: var(--fs-550);
   font-weight: bold;
-}
-
-.footer ul[role="policies"] {
 }
