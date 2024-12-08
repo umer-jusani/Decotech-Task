@@ -11,7 +11,7 @@ import LightBgThree from "../assets/FC6_Comeback_HiRez_Dani_Male_Final.avif";
 const Sample = () => {
     return (
         <>
-            <Parallax bgImage={BgOne} strength={0}>
+            <Parallax bgImage={BgOne} strength={500} >
                 <Section>
                     <Content>
                         <Title data-musk="appear">Trust your leader</Title>
@@ -20,7 +20,7 @@ const Sample = () => {
                 </Section>
             </Parallax>
 
-            <Parallax bgImage={LightBgOne} strength={500} >
+            <Parallax bgImage={LightBgOne} strength={500}  >
                 <Section>
                     <Content>
                         <Title data-musk="appear">Beware of the dictator</Title>
@@ -29,7 +29,7 @@ const Sample = () => {
                 </Section>
             </Parallax>
 
-            <Parallax bgImage={BgTwo} strength={500}>
+            <Parallax bgImage={BgTwo} strength={500}  >
                 <Section>
                     <Content>
                         <Title data-musk="appear">GUERRILLA FIGHTERS DESTROY CAPITOL</Title>
@@ -38,7 +38,7 @@ const Sample = () => {
                 </Section>
             </Parallax>
 
-            <Parallax bgImage={LightBgTwo} strength={500}>
+            <Parallax bgImage={LightBgTwo} strength={500} >
                 <Section>
                     <Content>
                         <Title data-musk="appear">GUERRILLA FIGHTERS DEFEND FREEDOM</Title>
@@ -47,7 +47,7 @@ const Sample = () => {
                 </Section>
             </Parallax>
 
-            <Parallax bgImage={BgThree} strength={500}>
+            <Parallax bgImage={BgThree} strength={500} >
                 <Section>
                     <Content>
                         <Title data-musk="appear">MEET DANI ROJAS</Title>
@@ -56,7 +56,7 @@ const Sample = () => {
                 </Section>
             </Parallax>
 
-            <Parallax bgImage={LightBgThree} strength={500}>
+            <Parallax bgImage={LightBgThree} strength={500} >
                 <Section>
                     <Content>
                         <Title data-musk="appear">MEET DANI ROJAS</Title>
