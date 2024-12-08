@@ -125,6 +125,12 @@ const Card = styled.div`
         @media (min-width: 50em) {
             width: 20rem;
     }
+
+    @media (max-width: 50em) {
+        height: 20rem;
+        object-position: top;
+        object-fit: cover;
+    }
     }
 
     & > h3 {

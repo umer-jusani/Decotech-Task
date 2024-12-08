@@ -40,7 +40,7 @@ const Section = styled.section`
   }
 
   @media (max-width: 40em) {
-    height: 73vh;
+    height: 80vh;
   }
 `;
 

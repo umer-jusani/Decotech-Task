@@ -7,7 +7,7 @@ import Humburger from "../assets/burger-menu.svg"
 const Header = () => {
     return (
         <Section className='primary_header'>
-            <Container className='container' style={{"--container-Align": "0 0 0 auto"}}>
+            <Container className='container' style={{ "--container-Align": "0 0 0 auto" }}>
 
                 <div className='left_section'>
                     <a href="" className='humburger'>
@@ -104,7 +104,7 @@ const Nav = styled.ul`
     height: fit-content;
     }
 
-    @media (max-width: 70em) {
+    @media (max-width: 75em) {
         display: none;
     }
  

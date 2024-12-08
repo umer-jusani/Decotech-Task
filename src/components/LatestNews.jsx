@@ -76,14 +76,6 @@ const LatestNews = () => {
                     </Card>
                 </Slider>
 
-
-
-
-
-
-
-
-
                 <Button>
                     <button className='primary-button'>All News</button>
                 </Button>

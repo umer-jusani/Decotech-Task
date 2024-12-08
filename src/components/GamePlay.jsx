@@ -20,13 +20,13 @@ const GamePlay = () => {
                     <button className='primary-button'>WATCH TRAILER</button>
                     <ImageContainer>
                         <div>
-                            <img src={Weapon} alt="" />
+                            <img src={Weapon} alt="" loading='lazy' />
                         </div>
                         <div>
-                            <img src={BackPacks} alt="" />
+                            <img src={BackPacks} alt="" loading='lazy' />
                         </div>
                         <div data-selected="true">
-                            <img src={FC6_Website_Vehicles} alt="" />
+                            <img src={FC6_Website_Vehicles} alt="" loading='lazy' />
                         </div>
                     </ImageContainer>
                 </Content>
