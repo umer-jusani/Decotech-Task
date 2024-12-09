@@ -158,8 +158,9 @@ height: fit-content;
         margin-inline: auto;
         justify-content: space-between;
         align-items: center;
+        border-radius: 5px;
         height: 100%;
-        /* padding-inline: 1rem; */
+        padding: .5rem;
         cursor: pointer;
         transition-duration: 0.25s;
 
