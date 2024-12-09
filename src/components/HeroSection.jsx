@@ -1,15 +1,14 @@
 import React from 'react';
-import Background from "../assets/header_fc6.avif"
-import SecondaryBackground from "../assets/fc6_background_mobile.avif"
-import VideoBg from "../assets/fc6-header-trailer-thumbnail-20th_anniversary.avif"
-import Pause from "../assets/PauseIcon.png"
 import styled from 'styled-components';
+import VideoBg from "../assets/fc6-header-trailer-thumbnail-20th_anniversary.avif";
+import SecondaryBackground from "../assets/fc6_background_mobile.avif";
+import Background from "../assets/header_fc6.avif";
 
 const HeroSection = () => {
   return (
     <Section className='hero-section'>
       <div className='container' data-small="true" style={{ "--container-Align": "0 auto 0 auto" }}>
-        <Wrapper className='flow' style={{ "--flow-spacer": "3em" }}>
+        <Wrapper className='flow' style={{ "--flow-spacer": "3em", }}>
           <Head>
             <h1>Welcome</h1>
             <h2>to yara</h2>
@@ -30,17 +29,19 @@ const HeroSection = () => {
 
 const Section = styled.section`
   background-image: url(${Background});
-  height: 85vh;
+  min-height: 85vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 70em) {
     background-image: url(${SecondaryBackground});
   }
 
   @media (max-width: 40em) {
-    height: 80vh;
+    min-height: 70vh;
   }
 `;
 
@@ -63,12 +64,12 @@ const VideoContainer = styled.div`
 
 const Wrapper = styled.div`
   width: fit-content;
-  padding-block: 4rem;
-   
+  /* padding-block: 4rem; */
+  
   @media (min-width: 50em) {
     margin-left: auto;
     margin-right: 6rem;
-    padding-block: 6rem;
+    /* padding-block: 6rem; */
   }
 
   @media (max-width: 50em) {

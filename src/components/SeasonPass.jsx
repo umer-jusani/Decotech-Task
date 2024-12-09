@@ -44,9 +44,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-padding: 2rem;
-color: var(--f-clr-white);
-
+    padding: 2rem;
     background-color: var(--bg-lightBlack);
 
     & p {

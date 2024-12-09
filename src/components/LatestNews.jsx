@@ -36,13 +36,9 @@ const LatestNews = () => {
     };
 
     return (
-        <Section className='padding-block-500'>
+        <Section className='LatestNews | padding-block-500'>
             <Container className='container' style={{ "--container-Align": "0 auto 0 auto", "--max-width": "1200px" }}>
                 <h2 className='subSection_title'>Latest Game News</h2>
-
-
-
-
                 <Slider className='slider' {...settings}>
                     <Card>
                         <Image src={SliderImageOne} alt='Far-Cry' loading='lazy' />

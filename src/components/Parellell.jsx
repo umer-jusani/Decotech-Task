@@ -10,7 +10,7 @@ import titleMusk from "../assets/titlemusk.png";
 
 const Parellell = () => {
     return (
-        <>
+        <div style={{ overflow: "hidden" }}>
             <Section className='parellell' style={{ "--image": `url(${BgOne})` }}>
                 <Content>
                     <Title data-musk="appear">Trust your leader</Title>
@@ -50,7 +50,7 @@ const Parellell = () => {
                     <Information>Growing up in Yara, Dani has experienced the brutality of Antón's rule firsthand. After barely escaping the regime forces with his life, he joins forces with Libertad, a rag tag group of guerrilla fighters, to liberate his home from Antón's grip and corrupt regime.</Information>
                 </Content>
             </Section>
-        </>
+        </div>
     )
 }
 

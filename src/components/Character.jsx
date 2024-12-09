@@ -16,7 +16,7 @@ const Character = () => {
 
     var settings = {
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: false,
         speed: 500,
         slidesToShow: 5,
@@ -58,8 +58,7 @@ const Character = () => {
                 }
             }
         ]
-    };;
-
+    };
 
     return (
         <Section className='padding-block-500 flow' style={{ "--flow-spacer": "3em" }}>
@@ -75,28 +74,28 @@ const Character = () => {
                 <Slider {...settings}>
                     <Card>
                         <img src={Anton} alt="" />
-                        <h3>Anton Castillo</h3>
+                        {/* <h3>Anton Castillo</h3> */}
                     </Card>
                     <Card>
                         <img src={Clara} alt="" />
-                        <h3>Clara garcia</h3>
+                        {/* <h3>Clara garcia</h3> */}
                     </Card>
                     <Card >
                         <img src={Dani} alt="" />
-                        <h3>Dani (Female)</h3>
+                        {/* <h3>Dani (Female)</h3> */}
                     </Card>
                     <Card >
                         <img src={Diego} alt="" />
-                        <h3>Diego Castillo</h3>
+                        {/* <h3>Diego Castillo</h3> */}
 
                     </Card>
                     <Card >
                         <img src={Juan} alt="" />
-                        <h3>Juan cortez</h3>
+                        {/* <h3>Juan cortez</h3> */}
                     </Card>
                     <Card>
                         <img src={guerillas} alt="" />
-                        <h3>Juan cortez</h3>
+                        {/* <h3>Juan cortez</h3> */}
                     </Card>
                 </Slider>
             </div>
@@ -106,12 +105,21 @@ const Character = () => {
 }
 
 const Section = styled.section`
-background: url(${Background});
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+    background: url(${Background});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--f-clr-primary);
-`;
+
+    /* &  .slick-next {
+    right: 17px;
+}
+    & .slick-prev {
+        left: 19px;
+        z-index: 1;
+    } */
+`
+;
 
 const Card = styled.div`
  position: relative;
