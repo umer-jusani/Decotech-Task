@@ -14,10 +14,8 @@ const HeroSection = () => {
             <h2>to yara</h2>
           </Head>
           <p>Embrace the gritty experience of an improvised modern-day guerrilla and take down a Dictator and his son to free Yara.</p>
-
-
           <VideoContainer>
-            <img src={VideoBg} alt="" />
+            <img src={VideoBg} alt="Video Background" loading="lazy" />
           </VideoContainer>
 
         </Wrapper>
