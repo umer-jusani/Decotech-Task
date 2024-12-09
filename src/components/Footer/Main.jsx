@@ -35,8 +35,10 @@ const Main = () => {
             </Sources>
 
             <Guide className='flow' style={{ "--flow-spacer": "1em" }}>
-                <h5>For more information, check out the</h5>
-                <span>UBISOFT PARENT GUIDE</span>
+                <div>
+                    <h5>For more information, check out the</h5>
+                    <span>UBISOFT PARENT GUIDE</span>
+                </div>
                 <img src={Alert} alt="" />
             </Guide>
 
@@ -103,12 +105,14 @@ const Guide = styled.div`
 
 
     & span {
+        display: block;
         font-weight: bold;
         text-decoration: underline;
     }
 
     & img {
-        margin-inline: auto;
+        /* margin-inline: auto; */
+        border: 2px solid red;
     }
 `;
 
