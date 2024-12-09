@@ -86,14 +86,14 @@ const ImageContainer = styled.div`
     }
     & img {
          width: 240px;
-        height: auto;
+        height: 100%;
     }
 
     @media (max-width: 40em) {
         gap: 1rem;
         & img {
          width: 200px;
-        height: auto;
+         height: 100%;
     }
         }
 `;
