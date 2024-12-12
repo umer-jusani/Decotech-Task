@@ -11,8 +11,6 @@ const Header = () => {
         setNavVisible(!navVisible);
     };
 
-
-
     return (
         <Section className='primary_header'>
             <Container className='container' style={{ "--container-Align": "0 0 0 auto" }}>
@@ -108,6 +106,8 @@ const Nav = styled.ul`
 
     & > li {
         display: flex;
+        position: relative;
+      /* display: inline-block; */
         list-style: none;
         justify-content: space-between;
         align-items: center;
@@ -115,14 +115,26 @@ const Nav = styled.ul`
         /* padding-inline: 1rem; */
         cursor: pointer;
         transition-duration: 0.25s;
-
-        &:hover {
-            background-color: var(--bg-clr-yellow);
-        }
-
+        z-index: 1;
         @media (min-width: 70em) {
             padding-inline: 1.5rem;
         }
+    }
+
+    & > li::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-clr-yellow); /* Hover background color */
+      z-index: -1;
+      transition: top 0.5s ease;
+    }
+
+    & > li:hover::after {
+      top: 0;
     }
 
     &  h5 {

@@ -164,14 +164,21 @@ select {
   background-color: var(--bg-clr-red);
   background-size: cover;
   background-position: center;
+  cursor: pointer;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   border-style: none;
+  transition-duration: 0.5s;
 
   @media (max-width: 50em) {
     padding: 0.75rem 0.75rem;
     font-size: var(--fs-300);
   }
+}
+
+.primary-button:hover {
+  background-color: var(--clr-neutral-color);
+  color: var(--clr-black);
 }
 
 p {

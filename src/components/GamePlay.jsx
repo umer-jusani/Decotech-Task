@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Weapon from "../assets/FC6_Website_Weapons.avif"
 import BackPacks from "../assets/FC6_Website_Backpacks.avif"
 import FC6_Website_Vehicles from "../assets/FC6_Website_Vehicles.avif"
 import bgVideo from "../assets/FC6_Website_Loop_Vehicles_SD.mp4"
+import bgWeapons from "../assets/FC6_Website_Loop_Weapons_HD.mp4"
+import bgBackpacks from "../assets/FC6_Website_Loop_Backpacks_HD.mp4"
 import styled from 'styled-components'
 
 const GamePlay = () => {
+    const videoRef = useRef();
+    const [selectedIndex, setSelectedIndex] = useState(0);
+
+    useEffect(() => {
+        const videos = [bgVideo, bgWeapons, bgBackpacks]; // Add your video files
+        let index = 0;
+
+        const interval = setInterval(() => {
+            index = (index + 1) % videos.length;
+            videoRef.current.src = videos[index];
+            videoRef.current.load(); // Ensure the video reloads
+            setSelectedIndex(index);
+        }, 3000);
+
+        return () => clearInterval(interval); // Cleanup
+    }, []);
+
     return (
         <Section>
-            <video className="bg-video" autoPlay loop muted>
+            <video className="bg-video" autoPlay loop muted ref={videoRef}>
                 <source src={bgVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -19,13 +38,13 @@ const GamePlay = () => {
                     <p>Can you imagine dealing a devastating blow with a modified sardine can? For Yaran guerrillas, the answer will always be yes. But resolver weapons are not all you will find in Yara. From a deadly CD launcher to a more classic sniper rifle, there is a weapon for everyone! you </p>
                     <button className='primary-button'>WATCH TRAILER</button>
                     <ImageContainer>
-                        <div>
+                        <div data-selected={selectedIndex === 1 ? "true" : "false"}>
                             <img src={Weapon} alt="" loading='lazy' />
                         </div>
-                        <div>
+                        <div data-selected={selectedIndex === 2 ? "true" : "false"}>
                             <img src={BackPacks} alt="" loading='lazy' />
                         </div>
-                        <div data-selected="true">
+                        <div data-selected={selectedIndex === 0 ? "true" : "false"}>
                             <img src={FC6_Website_Vehicles} alt="" loading='lazy' />
                         </div>
                     </ImageContainer>

@@ -16,24 +16,15 @@ const Character = () => {
 
     var settings = {
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1620,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 1300,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
@@ -42,11 +33,20 @@ const Character = () => {
                 }
             },
             {
-                breakpoint: 1000,
+                breakpoint: 1300,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 2
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             },
             {
@@ -61,7 +61,7 @@ const Character = () => {
     };
 
     return (
-        <Section className='padding-block-500 flow' style={{ "--flow-spacer": "3em" }}>
+        <Section className='padding-block-500 flow' style={{ "--flow-spacer": "3em", overflow: "hidden" }}>
             <Container className='container flow' style={{ "--container-Align": "0 auto 0 auto", "--flow-spacer": "2em" }}>
                 <h2 className='subSection_title'>Main characters</h2>
                 <div>
@@ -70,8 +70,8 @@ const Character = () => {
                 </div>
             </Container>
 
-            <div style={{ overflow: "hidden" }}>
-                <Slider {...settings}>
+            <Wrapper>
+                <Slider  {...settings}>
                     <Card>
                         <img src={Anton} alt="" />
                         {/* <h3>Anton Castillo</h3> */}
@@ -98,7 +98,7 @@ const Character = () => {
                         {/* <h3>Juan cortez</h3> */}
                     </Card>
                 </Slider>
-            </div>
+            </Wrapper>
 
         </Section>
     )
@@ -119,11 +119,12 @@ const Section = styled.section`
         z-index: 1;
     } */
 `
-;
+    ;
 
 const Card = styled.div`
  position: relative;
- 
+width: fit-content;
+
     & img {
         width: 18rem;
         height: auto;
@@ -137,6 +138,12 @@ const Card = styled.div`
     @media (max-width: 50em) {
         height: 20rem;
         object-position: top;
+        object-fit: cover;
+    }
+
+    @media (max-width: 20em) {
+        height: 10rem;
+        object-position: center;
         object-fit: cover;
     }
     }
@@ -184,6 +191,41 @@ const Container = styled.div`
     & > p {
         width: 100%;
     }
+`;
+
+
+const Wrapper = styled.div`
+    margin-inline: 4rem;
+ 
+
+     & .slick-next {
+    right: -5px;
+}
+
+& .slick-prev {
+    left: -13px;
+}
+
+& .slick-prev:before, .slick-next:before {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 30em) {
+    & .slick-prev:before, .slick-next:before {
+    font-size: 1.3rem;
+}
+
+& .slick-next {
+    right: -35px;
+}
+
+& .slick-prev {
+    left: -35px;
+}
+
+}
+
 `;
 
 export default Character

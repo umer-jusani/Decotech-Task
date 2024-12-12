@@ -5,10 +5,12 @@ import Twich from "../assets/twich.avif"
 import Youtube from "../assets/youtube.avif"
 import instagram from "../assets/instagram.avif"
 import Facebook from "../assets/facebook.avif"
+import musk from "../assets/socialiconsmusk.png"
 
 const SocialIcons = () => {
     return (
-        <Section  >
+        <Section>
+            <Musk src={musk} alt="Musk overlay" />
             <div className='container' style={{ "--container-Align": "0 auto 0 auto" }}>
                 <div>
                     <ul className='socialIcons_List'>
@@ -46,8 +48,16 @@ const SocialIcons = () => {
 
 const Section = styled.section`
     background-color: var(--bg-clr-black);
-    
+    position: relative;
 `
+
+const Musk = styled.img`
+position: absolute;
+    bottom: -2.7%;
+    width: 107%;
+    z-index: 3;
+    height: 15px;
+`;
 
 
 export default SocialIcons
