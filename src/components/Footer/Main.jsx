@@ -85,12 +85,14 @@ const Sources = styled.div`
 
  & ul li {
    font-size: var(--fs-550);
+   cursor: pointer;
  }
 
  & ul li:first-child {
    font-size: var(--fs-400);
    font-weight: 300;
    padding-bottom: 5px;
+   cursor: pointer;
  }
 `;
 

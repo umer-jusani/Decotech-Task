@@ -330,6 +330,7 @@ p {
 }
 
 .footer > :first-child > div {
+  cursor: pointer;
   width: fit-content;
   margin-inline: auto;
   display: flex;
@@ -349,6 +350,7 @@ p {
 .footer ul[role="services&support"] {
   font-size: var(--fs-550);
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* LatestNews */

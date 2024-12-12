@@ -12,7 +12,7 @@ const LatestNews = () => {
 
     const settings = {
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -37,40 +37,44 @@ const LatestNews = () => {
 
     return (
         <Section className='LatestNews | padding-block-500'>
-            <Container className='container' style={{ "--container-Align": "0 auto 0 auto", "--max-width": "1200px" }}>
+            <Container className='container' style={{ "--container-Align": "0 auto 0 auto", "--max-width": "1400px" }}>
                 <h2 className='subSection_title'>Latest Game News</h2>
-                <Slider className='slider' {...settings}>
-                    <Card>
-                        <Image src={SliderImageOne} alt='Far-Cry' loading='lazy' />
-                        <Content className='flow' style={{ "--flow-spacer": ".75em" }}>
-                            <Title>CELEBRATE FAR CRY 20TH ANNIVERSARY WITH THE LATEST TRANSMEDIA RELEASES</Title>
-                            <p>14 March 2024</p>
-                            <span className='time-duration'>3 Min Read</span>
-                            <p>If you enjoyed playing Far Cry games, then brace yourself because there’s more to explore thanks to the slate of transmedia products developed around the franchise.</p>
-                            <button className='primary-button'>Read More</button>
-                        </Content>
-                    </Card>
-                    <Card>
-                        <Image src={SliderImageTwo} alt='Far-Cry' loading='lazy' />
-                        <Content className='flow' style={{ "--flow-spacer": ".75em" }}>
-                            <Title>Take Your Best Shot for Ubisoft’s Photomode Contest 2024</Title>
-                            <p>19 February 2024</p>
-                            <span className='time-duration'>3 Min Read</span>
-                            <p>Submit your best in-game photo for a chance to win a Ubisoft Montreal studio tour, a one-year Ubisoft+ Premium subscription, and more.</p>
-                            <button className='primary-button'>Read More</button>
-                        </Content>
-                    </Card>
-                    <Card>
-                        <Image src={SliderImageThree} alt='Far-Cry' loading='lazy' />
-                        <Content className='flow' style={{ "--flow-spacer": ".75em" }}>
-                            <Title>Far Cry 6 – Free Weekend Available Now</Title>
-                            <p>14 February 2023</p>
-                            <span className='time-duration'>3 Min Read</span>
-                            <p>Don’t miss this chance to liberate Yara from an oppressive dictator, take advantage of major discounts, and snag an in-game exclusive for playing co-op.</p>
-                            <button className='primary-button'>Read More</button>
-                        </Content>
-                    </Card>
-                </Slider>
+
+
+                <Wrapper>
+                    <Slider className='slider' {...settings}>
+                        <Card>
+                            <Image src={SliderImageOne} alt='Far-Cry' loading='lazy' />
+                            <Content className='flow' style={{ "--flow-spacer": ".75em" }}>
+                                <Title>CELEBRATE FAR CRY 20TH ANNIVERSARY WITH THE LATEST TRANSMEDIA RELEASES</Title>
+                                <p>14 March 2024</p>
+                                <span className='time-duration'>3 Min Read</span>
+                                <p>If you enjoyed playing Far Cry games, then brace yourself because there’s more to explore thanks to the slate of transmedia products developed around the franchise.</p>
+                                <button className='primary-button'>Read More</button>
+                            </Content>
+                        </Card>
+                        <Card>
+                            <Image src={SliderImageTwo} alt='Far-Cry' loading='lazy' />
+                            <Content className='flow' style={{ "--flow-spacer": ".75em" }}>
+                                <Title>Take Your Best Shot for Ubisoft’s Photomode Contest 2024</Title>
+                                <p>19 February 2024</p>
+                                <span className='time-duration'>3 Min Read</span>
+                                <p>Submit your best in-game photo for a chance to win a Ubisoft Montreal studio tour, a one-year Ubisoft+ Premium subscription, and more.</p>
+                                <button className='primary-button'>Read More</button>
+                            </Content>
+                        </Card>
+                        <Card>
+                            <Image src={SliderImageThree} alt='Far-Cry' loading='lazy' />
+                            <Content className='flow' style={{ "--flow-spacer": ".75em" }}>
+                                <Title>Far Cry 6 – Free Weekend Available Now</Title>
+                                <p>14 February 2023</p>
+                                <span className='time-duration'>3 Min Read</span>
+                                <p>Don’t miss this chance to liberate Yara from an oppressive dictator, take advantage of major discounts, and snag an in-game exclusive for playing co-op.</p>
+                                <button className='primary-button'>Read More</button>
+                            </Content>
+                        </Card>
+                    </Slider>
+                </Wrapper>
 
                 <Button>
                     <button className='primary-button'>All News</button>
@@ -103,6 +107,14 @@ const Container = styled.div`
     @media (max-width: 40em) {
         gap: 2rem;
     }
+
+
+
+
+& .subSection_title {
+        margin-inline: auto;
+        width: fit-content;
+}
 `;
 
 const Content = styled.div`
@@ -117,14 +129,12 @@ margin-top: 2em;
         /* font-weight: 500; */
     }
 
-     @media (min-width: 50em) {
         & p {
             display: -webkit-box !important;
-    -webkit-line-clamp: 4 !important;
+    -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
     }
-     }
 `;
 
 const Title = styled.h2`
@@ -151,6 +161,27 @@ const Image = styled.img`
     object-fit: cover;
     border: 5px solid var(--bg-clr-greyish);
     /* transform: rotate(-4deg) */
+`;
+
+const Wrapper = styled.div`
+    margin-inline: 2.5rem;
+
+    @media (min-width: 60em) {
+        margin-inline: 4rem;
+    }
+
+    @media (max-width: 30em) {
+    & .slick-next {
+    right: -35px;
+    }
+
+    & .slick-prev {
+    left: -35px;
+    }
+
+}
+
+
 `;
 
 const Button = styled.div`
