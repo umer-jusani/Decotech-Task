@@ -61,6 +61,9 @@ const Section = styled.section`
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed; /* Use background-attachment instead of shorthand */
+    position: relative;
+    z-index: 111;
 
     @media (min-width: 50em) {
         height: 100vh;
