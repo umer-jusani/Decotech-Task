@@ -128,7 +128,7 @@ const Nav = styled.ul`
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--bg-clr-yellow); /* Hover background color */
+      background-color: var(--bg-clr-yellow);  
       z-index: -1;
       transition: top 0.5s ease;
     }

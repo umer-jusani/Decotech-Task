@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import VideoBg from "../assets/fc6-header-trailer-thumbnail-20th_anniversary.avif";
 import SecondaryBackground from "../assets/fc6_background_mobile.avif";
 import Background from "../assets/header_fc6.avif";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const HeroSection = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 600, // Customize options here
+    });
+  }, []);
+
   return (
     <Section className='hero-section'>
       <div className='container' data-small="true" style={{ "--container-Align": "0 auto 0 auto" }}>
         <Wrapper className='flow' style={{ "--flow-spacer": "3em", }}>
-          <Head>
+          <Head data-aos="fade-left" data-aos-duration="1500" >
             <h1>Welcome</h1>
             <h2>to yara</h2>
           </Head>
-          <p>Embrace the gritty experience of an improvised modern-day guerrilla and take down a Dictator and his son to free Yara.</p>
-          <VideoContainer>
+          <p data-aos="fade-left" data-aos-duration="3000">Embrace the gritty experience of an improvised modern-day guerrilla and take down a Dictator and his son to free Yara.</p>
+          <VideoContainer data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
             <img src={VideoBg} alt="Video Background" loading="lazy" />
           </VideoContainer>
 

@@ -61,7 +61,7 @@ const Section = styled.section`
     background-size: cover;
     background-position: center;
     position: relative;
-    background-attachment: fixed; /* Use background-attachment instead of shorthand */
+    background-attachment: fixed;  
     position: relative;
     z-index: 111;
 
