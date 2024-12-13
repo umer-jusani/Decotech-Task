@@ -12,17 +12,17 @@ const GamePlay = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     useEffect(() => {
-        const videos = [bgVideo, bgWeapons, bgBackpacks]; // Add your video files
+        const videos = [bgVideo, bgWeapons, bgBackpacks];
         let index = 0;
 
         const interval = setInterval(() => {
             index = (index + 1) % videos.length;
             videoRef.current.src = videos[index];
-            videoRef.current.load(); // Ensure the video reloads
+            videoRef.current.load();
             setSelectedIndex(index);
         }, 3000);
 
-        return () => clearInterval(interval); // Cleanup
+        return () => clearInterval(interval);
     }, []);
 
     return (

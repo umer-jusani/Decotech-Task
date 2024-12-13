@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import Logo from "../assets/logo.avif"
 import Arrow from "../assets/rightarrw.svg"
 import Humburger from "../assets/burger-menu.svg"
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Header = () => {
     const [navVisible, setNavVisible] = useState(false);
@@ -10,6 +12,12 @@ const Header = () => {
     const toggleNav = () => {
         setNavVisible(!navVisible);
     };
+
+    useEffect(() => {
+        AOS.init({
+            duration: 600, // Customize options here
+        });
+    }, []);
 
     return (
         <Section className='primary_header'>
@@ -19,7 +27,7 @@ const Header = () => {
                     <button href="" className='humburger' onClick={toggleNav}>
                         <img src={Humburger} alt="humburger" />
                     </button>
-                    <BrandLogo href="" >
+                    <BrandLogo href="" data-aos="zoom-in" data-aos-duration="2000">
                         <img src={Logo} alt="" />
                     </BrandLogo>
 
