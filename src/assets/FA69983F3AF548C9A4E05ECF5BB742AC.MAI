@@ -1,0 +1,59 @@
+Received: from smtp08.bankalhabib.com ([103.93.208.37]) by home with MailEnable ESMTPS (version=TLS1_2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+ Fri, 6 Sep 2024 04:39:44 -0700
+Received: from relay03.bank.alhabib.com (unknown [192.168.100.226])	by
+ smtp08.bankalhabib.com (Postfix) with ESMTP id 1030756C03F	for
+ <umer.jusani@xtecsoft.com>; Fri,  6 Sep 2024 16:39:43 +0500 (PKT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bankalhabib.com;	s=smtp08; t=1725622783;	bh=Ta8eqBxOetouSzMLCW5uXCPPRxe3B8z4cBWIlyrcnw4=;	h=From:To:Date:Subject:From;	b=skWW1yWOHuN31LJzRlrgSSlwty5gy9H61duvjlXWtR9Rj9qwhc91KR4NqpZNAkdZa	
+ kfyT0Inis1CpsMXL6G1+db8pozNs5nS+Vq3mkjw4B/4ZToflU0BSAdEojMLc8xWnJt	
+ yvPyhnj1YdOHgyT9x8la1x8siyE4XfeTIiy/zo7VIQOrCFP0uuZlHJI2TKuWCMPOdO	
+ F28w/+Z/J5rEfJEIKlweIliWTghxPXxlB73EBKGJsCMTSbVpmXBjKdGxWcSPYDrZgA	
+ 2jX0Vl6q9c2oXiZPGM8nZn/ZuUltQc3AWPvv3oLcpGJ9xfbWpJEE3VkPdO331f5GNR	 0cIc0JtVlwIXQ==
+From: "AL Habib Payments System" <bahl.paymentsystem@bankalhabib.com>
+To: umer.jusani@xtecsoft.com
+Date: 6 Sep 2024 16:39:43 +0500
+Subject: Transaction Notification
+Message-ID: <OF9D698DC2.AABD94DA-ON45258B90.00400FC1@bankalhabib.com>
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+MIME-Version: 1.0
+X-TNEFEvaluated: 1
+X-Disclaimed: 32439
+Return-Path: <bahl.paymentsystem@bankalhabib.com>
+X-Read: 1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>    <title></title>
+</head><body><p style=3D"font-family:Calibri; font-size:10pt">
+Dear<b> MUHAMMAD UMER JUSANI</b>, <br /><b>FT</b> of amount <b>PKR 42950.00=
+/-</b> has been processed on behalf of <b>XTECSOFT(SMC PRIVATE) LIMITED</b>=
+ through <b>BAHL AHPS</b> in your </b> A/C <b>1191XXXXXXXXXX018</b> against=
+ <b></b>, <br />REF: <b>Salary Transaction#</b> on <b>06/09/2024</b> at <b>=
+4:39 PM</b>. <br />For details, please call: <b>021-32277231-39</b>. <br />=
+<br/> <br/>Regards,<br/><b>Cash Management Division </b><br /><b>Bank AL Ha=
+bib Limited </b> </p>=20
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Confidentiality Notice: ***************************************************=
+*********************************** <BR>
+<BR>
+Disclaimer: - Bank AL Habib takes data privacy seriously. Any personal info=
+rmation shared with us will be treated with the utmost confidentiality and =
+in accordance with applicable data protection laws. This email and any atta=
+chments to it (the &quot;Communication&quot;) is confidential and is for th=
+e use only of the intended recipient. The Communication may contain copyrig=
+ht material of Bank AL Habib Limited 111-014-014 (Call Centre). If you are =
+not the intended recipient of the Communication, please notify the sender i=
+mmediately by return email, delete the Communication, and do not read, copy=
+, print, retransmit, store or act in reliance on the Communication. Any vie=
+ws expressed in the Communication are those of the individual sender only, =
+unless expressly stated to be those of Bank AL Habib. Bank AL Habib does no=
+t guarantee the integrity of the Communication, or that it is free from err=
+ors, viruses or interference.<BR>
+<BR>
+***************************************************************************=
+***********************************<BR>
+</body></html>

@@ -56,7 +56,7 @@ const Parellell = () => {
 
 const Section = styled.section`
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     background: var(--image);  
     background-size: cover;
     background-position: center;

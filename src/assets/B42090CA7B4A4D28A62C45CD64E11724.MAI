@@ -1,0 +1,92 @@
+Received: from BSF2.bankalhabib.com ([117.20.16.131]) by home with
+ MailEnable ESMTPS (version=TLS1_2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384); Thu, 5 Dec 2024 21:26:12 -0800
+X-ASG-Debug-ID: 1733462767-183e3f6a71bc0662000c-CQ7nFx
+Received: from relay03.bank.alhabib.com ([192.168.100.226]) by BSF2.bankalhabib.com with ESMTP id sYnWT80vXFNFYSXM for <umer.jusani@xtecsoft.com>; Fri, 06 Dec 2024 10:26:10 +0500 (PKT)
+X-Barracuda-Envelope-From: bahl.paymentsystem@bankalhabib.com
+X-Barracuda-RBL-Trusted-Forwarder: 192.168.100.226
+From: "AL Habib Payments System" <bahl.paymentsystem@bankalhabib.com>
+To: umer.jusani@xtecsoft.com
+Date: 6 Dec 2024 10:26:09 +0500
+Subject: Transaction Notification
+Message-ID: <OFA949638B.B3EFE717-ON45258BEB.001DDC85@bankalhabib.com>
+X-ASG-Orig-Subj: Transaction Notification
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+MIME-Version: 1.0
+X-TNEFEvaluated: 1
+X-Disclaimed: 6683
+X-Barracuda-Connect: UNKNOWN[192.168.100.226]
+X-Barracuda-Start-Time: 1733462769
+X-Barracuda-URL: https://172.16.200.100:443/cgi-mod/mark.cgi
+X-Virus-Scanned: by bsmtpd at bankalhabib.com
+X-Barracuda-Scan-Msg-Size: 1958
+X-Barracuda-BRTS-Status: 1
+X-Barracuda-Spam-Score: 0.00
+X-Barracuda-Spam-Status: No, SCORE=0.00 using global scores of TAG_LEVEL=1000.0 QUARANTINE_LEVEL=1000.0 KILL_LEVEL=6.0 tests=HTML_MESSAGE, MIME_HTML_ONLY
+X-Barracuda-Spam-Report: Code version 3.2, rules version 3.2.3.134159
+	Rule breakdown below
+	 pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	0.00 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+	0.00 HTML_MESSAGE           BODY: HTML included in message
+Return-Path: <btv1==0700dfd7677==bahl.paymentsystem@bankalhabib.com>
+X-Read: 1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>    <title></title>
+</head><body><p style=3D"font-family:Calibri; font-size:10pt">
+Dear<b> MUHAMMAD UMER JUSANI</b>, <br /><b>FT</b> of amount <b>PKR 39830.00=
+/-</b> has been processed on behalf of <b>XTECSOFT(SMC PRIVATE) LIMITED</b>=
+ through <b>BAHL AHPS</b> in your </b> A/C <b>1191XXXXXXXXXX018</b> against=
+ <b></b>, <br />REF: <b>Salary Transaction#</b> on <b>06/12/2024</b> at <b>=
+10:26 AM</b>. <br />For details, please call: <b>021-32277231-39</b>. <br /=
+><br/> <br/>Regards,<br/><b>Cash Management Division </b><br /><b>Bank AL H=
+abib Limited </b> </p>=20
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Confidentiality Notice: ***************************************************=
+*********************************** <BR>
+<BR>
+Disclaimer: - Bank AL Habib takes data privacy seriously. Any personal info=
+rmation shared with us will be treated with the utmost confidentiality and =
+in accordance with applicable data protection laws. This email and any atta=
+chments to it (the &quot;Communication&quot;) is confidential and is for th=
+e use only of the intended recipient. The Communication may contain copyrig=
+ht material of Bank AL Habib Limited 111-014-014 (Call Centre). If you are =
+not the intended recipient of the Communication, please notify the sender i=
+mmediately by return email, delete the Communication, and do not read, copy=
+, print, retransmit, store or act in reliance on the Communication. Any vie=
+ws expressed in the Communication are those of the individual sender only, =
+unless expressly stated to be those of Bank AL Habib. Bank AL Habib does no=
+t guarantee the integrity of the Communication, or that it is free from err=
+ors, viruses or interference.<BR>
+<BR>
+***************************************************************************=
+***********************************<BR>
+<br>Confidentiality Notice: =0D
+=0D
+=0D
+***************************************************************************=
+*********** =0D
+Disclaimer: - Bank AL Habib takes data privacy seriously. Any personal info=
+rmation shared with us will be treated with the utmost confidentiality and =
+in accordance with applicable data protection laws. This email and any atta=
+chments to it (the "Communication") is confidential and is for the use only=
+ of the intended recipient. The Communication may contain copyright materia=
+l of Bank AL Habib Limited 111-014-014 (Call Centre). If you are not the in=
+tended recipient of the Communication, please notify the sender immediately=
+ by return email, delete the Communication, and do not read, copy, print, r=
+etransmit, store or act in reliance on the Communication. Any views express=
+ed in the Communication are those of the individual sender only, unless exp=
+ressly stated to be those of Bank AL Habib. Bank AL Habib does not guarante=
+e the integrity of the Communication, or that it is free from errors, virus=
+es or interference.=0D
+=0D
+***************************************************************************=
+***********************************
+&nbsp;&nbsp;&shy;&shy;&nbsp;&nbsp;</body></html>
+
