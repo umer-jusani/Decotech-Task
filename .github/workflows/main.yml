@@ -1,0 +1,13 @@
+name: Umer Jusani 
+
+on: 
+ push: 
+  branches: [ main ]
+
+jobs: 
+ demo: 
+  runs-on: ubuntu-latest
+
+  steps: 
+  - name: greetings
+    runs: echo "Hello From Apun"
